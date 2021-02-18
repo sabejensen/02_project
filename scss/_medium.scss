@@ -1,0 +1,68 @@
+
+
+
+/*----------- BODY --------------*/
+div.flexed {
+    justify-content: space-around;
+}
+@for $i from 1 through 12 {
+    $w:($i / 12) * 96%;
+    .medium-#{$i} {flex-basis: $w; margin: 1px;}
+}
+.medium-0 {
+    flex-basis: 0%;
+}
+
+/*----------- HEADER --------------*/
+header input {
+    margin-top: -28px;
+}
+nav ul.hide{
+    display: block;
+}
+nav button {
+    display: none;
+}
+nav ul li {
+    width: 15%;
+}
+#nav-menu {
+    height: auto;
+}
+nav button {
+    display: none;
+}
+.parent ul {
+    position: absolute;
+    display: none;
+}
+.parent ul li {
+    display: block;
+    float: none;
+    width: 150px;
+}
+#nav-menu li:hover ul {
+    position: absolute;
+    display: block;
+    float: left;
+}
+.blog-item {
+    max-width: 40%;
+    margin: 0.6%;
+}
+#footer-wrapper {
+    display: flex;
+}
+#footer-wrapper div {
+    width: 33%;
+}
+
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+
+
+/*----------- FOOTER --------------*/
+    

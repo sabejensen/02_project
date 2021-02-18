@@ -1,0 +1,232 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+#footer-wrapper, main h1 {
+    padding: 0 2% 0 2%;
+}
+
+/*----------- COLUMNS --------------*/
+.flexed {display: flex; flex-wrap: wrap;}
+.column {padding: 0 1%}
+@for $i from 1 through 12 {
+    $w:($i / 12) * 96%;
+    .small-#{$i} {flex-basis: $w; margin: 1px}
+}
+
+/*----------- HEADER --------------*/
+header.header {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    position: relative;
+}
+header h1, header h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+}
+h1 {margin: 0; font-size: 2rem; font-family: 'Open Sans Condensed', sans-serif;}
+h2 {margin: 0; font-size: 1.2rem;}
+header input {
+    float: right;
+    height: 28px;
+    width: 160px;
+}
+
+/*----------- NAVIGATION --------------*/
+#nav-wrapper {
+    background-color: $primaryColor;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    padding-left: 10px;
+    width: 100%;
+}
+nav ul li a {
+    display: block;
+    color: $secondaryColor;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 6px 10px 6px 0;
+}
+nav ul.hide {
+    display: none;
+}
+nav ul li:hover {
+    background-color: lighten($primaryColor, 6%);
+}
+nav ul li.active {
+    background-color: darken($primaryColor, 8%);
+    color: $secondaryColor;
+}
+.parent {
+    position: relative;
+    display: inline-block;
+}
+.parent ul {
+    width: 100%;
+    z-index: 1;
+}
+.parent ul li {
+    background-color: $primaryColor;
+    width: 102.1%;
+    margin-left: -2.1%;
+}
+.parent:hover .parent ul {
+    display: block;
+}
+.search {
+    background-color: $secondaryColor;
+}
+.search-wrap {
+    display: flex;
+    float: right;
+    margin-right: 5px;
+    height: 40.5px;
+}
+.search-button {
+    background-color: $secondaryColor;
+    text-align: center;
+    border: 1px solid black;
+    height: 39px;
+    width: 39px;
+    margin-top: 1px;
+    margin-left: -2px;
+    padding-top: 8.6px;
+    color: gray;
+}
+.search-button:active {
+    background-color: #aaa;
+}
+nav button {
+    background-color: $primaryColor;
+    height: 50px;
+    width: 50px;
+    color: #eee;
+    font-size: 26pt;
+    border: none;
+    padding: 0px 2px 4px 0px;
+}
+nav button:active {
+    background-color: lighten($primaryColor, 10%);
+}
+/*----------- MAIN --------------*/
+main {
+    min-height: 10rem;
+    overflow: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+img {
+    width: 100%;
+}
+figure {
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+figcaption {
+    padding: 10px;
+    display: block;
+    float: left;
+    position: absolute;
+    background-color: rgba(230, 230, 230, 0.747);
+    bottom: 0.7%;
+    width: 100%;
+}
+.logo {
+    max-width: 120px;
+    margin: 0;
+}
+.blog-item {
+    max-width: 48%;
+    margin: 0.8%;
+}
+.blog-item a {
+    text-decoration: none;
+    color: black;
+}
+.blog-date {
+    background-color: $secondaryColor;
+    color: black;
+    height: 26px;
+    margin-top: -19px;
+}
+.blog-date p {
+    padding: 5px;
+}
+button {
+    background-color: lighten($primaryColor, 80%);
+    width: 100%;
+    border: none;
+    padding: 2px;
+}
+.thank-you {
+    text-align: center;
+    margin-top: 10%;
+}
+.low-line-height {
+    line-height: 4pt;
+}
+/*----------- FOOTER --------------*/
+footer {
+    text-align: center;
+    font-size: 4.5rem;
+}
+footer a {
+    color: darken($primaryColor, 6%)
+}
+footer i:hover {
+    color: lighten($primaryColor, 6%)
+}
+#footer-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $primaryColor;
+    color: white;
+}
+#footer-wrapper div {
+    width: 100%;
+    padding: 2px;
+}
+#footer-wrapper div p {
+    font-size: 10pt;
+}
+#email-form {
+    width: 90%;
+    height: 35px;
+    margin-bottom: 5px;
+    background-color: $secondaryColor;
+}
+.button {
+    width: 90%;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 10pt;
+    background-color: $secondaryColor;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

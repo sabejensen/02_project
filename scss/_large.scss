@@ -1,0 +1,39 @@
+nav, main, footer, header, #footer-wrapper {
+        max-width: 1000px;
+        margin:auto;
+}
+#nav-wrapper {
+        width: 100vw;
+}
+
+/*----------- BODY --------------*/
+
+.wrapper {
+        width: 100%;
+        background-color: $primaryColor;
+        color: white;
+}
+@for $i from 1 through 12 {
+        $w:($i / 12) * 96%;
+        .large-#{$i} {flex-basis: $w; margin: 1px;}
+    }
+
+.blog-item {
+        max-width: 23.8%;
+        margin: 0.6%;
+}
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
