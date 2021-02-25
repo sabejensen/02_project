@@ -547,6 +547,42 @@ button {
 .low-line-height {
   line-height: 4pt; }
 
+.cruise-listing {
+  margin-bottom: 25px; }
+
+.content-container {
+  padding: 0 10px; }
+
+.agent-container h2 {
+  margin-bottom: -12px; }
+
+.agent-container img {
+  width: 98%;
+  margin: 0 1%; }
+
+.cruise-button {
+  border-radius: 25px;
+  padding: 8px 0;
+  background-color: #afafaf; }
+
+fieldset label {
+  font-size: 10pt;
+  font-style: italic; }
+
+fieldset label input, select {
+  margin-bottom: 10px;
+  font-size: 14pt;
+  width: 90%;
+  background-color: #f0f0f0; }
+
+#book-button {
+  margin: 15px 0;
+  font-size: 14pt;
+  color: white;
+  width: 90%;
+  border: none;
+  background-color: #044b5d; }
+
 /*----------- FOOTER --------------*/
 footer {
   text-align: center;
@@ -895,6 +931,28 @@ footer i:hover {
 
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  .cruise-listing {
+    display: flex; }
+
+  .cruise-img {
+    max-width: 28%;
+    margin-right: 2%; }
+
+  .cruise-button {
+    float: right;
+    width: 22%; }
+
+  .agent-container img {
+    max-width: 38%;
+    float: right;
+    margin: 0; }
+
+  fieldset label input, select {
+    width: 32%; }
+
+  #book-button {
+    width: 32%; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 60rem) {
@@ -968,5 +1026,3 @@ footer i:hover {
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */
-
-/*# sourceMappingURL=styles.css.map */

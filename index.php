@@ -1,4 +1,7 @@
-<?php include '_header.php'; ?>
+<?php 
+    $title = "Home";
+    include '_header.php'; 
+?>
 
 <!-- CONTENT HERE -->
     <main>

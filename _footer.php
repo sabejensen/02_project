@@ -16,7 +16,7 @@
             <h2>News Letter</h2>
             <p>Subscribe to our email list and stay up-to-date with our
                hottest offers and latest specials.</p>
-            <form method="get" action="thanks.html">
+            <form method="get" action="thanks.php">
                 <label class="top">
                     <input type="email" name="email" id="email-form" >
                 </label>

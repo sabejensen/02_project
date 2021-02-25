@@ -62,7 +62,28 @@ nav button {
 
 
 /*----------- MAIN --------------*/
-
+.cruise-listing {
+    display: flex;
+}
+.cruise-img {
+    max-width: 28%;
+    margin-right: 2%;
+}
+.cruise-button {
+    float: right;
+    width: 22%;
+}
+.agent-container img {
+    max-width: 38%;
+    float: right;
+    margin: 0;
+}
+fieldset label input, select {
+    width: 32%;
+}
+#book-button {
+    width: 32%;
+}
 
 /*----------- FOOTER --------------*/
     

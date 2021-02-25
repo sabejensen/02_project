@@ -184,6 +184,43 @@ button {
 .low-line-height {
     line-height: 4pt;
 }
+.cruise-listing {
+    margin-bottom: 25px;
+}
+.content-container {
+    padding: 0 10px;
+}
+.agent-container h2 {
+    margin-bottom: -12px;
+}
+.agent-container img {
+    width: 98%;
+    margin: 0 1%;
+}
+.cruise-button {
+    border-radius: 25px;
+    padding: 8px 0;
+    background-color: rgb(175, 175, 175);
+}
+fieldset label {
+    font-size: 10pt;
+    font-style: italic;
+}
+fieldset label input, select {
+    margin-bottom: 10px;
+    font-size: 14pt;
+    width: 90%;
+    background-color: $secondaryColor;
+}
+#book-button {
+    margin: 15px 0;
+    font-size: 14pt;
+    color: white;
+    width: 90%;
+    border: none;
+    background-color: darken($primaryColor, 6%);
+}
+
 /*----------- FOOTER --------------*/
 footer {
     text-align: center;

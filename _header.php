@@ -6,7 +6,7 @@
 <meta name="author" content="John Doe">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>Cabot Cruises</title>
+<title>Cabot Cruises - <?php echo $title; ?></title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,7 +18,7 @@
 <link href="css/styles.css" rel="stylesheet">
 
 <!-- JS -->
-<script src="script/scripts.js"></script>
+<script defer src="script/scripts.js"></script>
 
      
 </head>
@@ -42,15 +42,15 @@
             <div class='search-button'><i class="fas fa-search"></i></div>
         </div>
         <ul id="nav-menu" class="column hide" >
-            <li class="active"><a href="/index.html">Home</a></li>
-            <li><a href="#">Cruises</a></li>
+            <li><a href="/index.php">Home</a></li>
+            <li><a href="/cruises.php">Cruises</a></li>
             <li class="parent"><a href="#">Agents</a>
                 <ul>
-                    <li><a href="#">Tropical Cruises</a></li>
-                    <li><a href="#">Arctic Cruises</a></li>
+                    <li><a href="/agent_1.php">John Smith</a></li>
+                    <li><a href="/agent_2.php">Jaime Brown</a></li>
                 </ul>
             </li>
-            <li><a href="#">Book</a></li>
+            <li><a href="/book.php">Book</a></li>
         </ul>
     </nav>
 </div>
